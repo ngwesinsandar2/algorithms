@@ -4,9 +4,9 @@ Fibonacci Sequence
   the first two terms are 0 and 1 and each succeeding term
   is the sum of the two immediately preceding.
 */
-var fibonacci = function (n) {
-    var initials = [0, 1];
-    for (var i = 2; i < n; i++) {
+const fibonacci = (n) => {
+    const initials = [0, 1];
+    for (let i = 2; i < n; i++) {
         initials[i] = initials[i - 2] + initials[i - 1];
         // initials[2] = initials[0](0) + initials[1](1) = 1
     }
@@ -18,3 +18,4 @@ console.log(fibonacci(7)); //[0, 1, 1, 2, 3, 5, 8]
 console.log(fibonacci(10)); //[0, 1,  1,  2,  3, 5, 8, 13, 21, 34]
 //BigO = Linear Time: O(n) 
 // -> input size များတာနဲ့(ကြီးတာနဲ့) လုပ်ရတဲ့အကြောင်းအရေအတွက်ပါများလာ များ->များ
+//# sourceMappingURL=fibonacci.js.map
